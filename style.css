@@ -1,0 +1,142 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 300px;
+    height: 56px;
+}
+
+.navbar-container {
+    display: grid;
+    grid-template-columns: [first] 100px;
+    border-bottom: 3px solid #d3d3d3;
+}
+
+.navbar-logo {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.navbar-items {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+ul {
+    padding-top: 5px;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: #595959;
+    text-decoration: none;
+    text-align: center;
+    padding: 23px 16px 22px;
+    font-family: Georgia, serif;
+}
+
+li a:hover{
+    background-color: #d3d3d3;
+    color: #054E8C;
+}
+
+.item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-gap: 30px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.item {
+    display: table-cell;
+    vertical-align: middle;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #e7e7e7;
+    text-align: center;
+}
+
+.item-photo {
+    margin-top: 7px;
+    height: 200px;
+    width: 286px;
+}
+
+.bid-button {
+    border: none;
+    width: 286px;
+    height: 60px;
+    font-size: 30px;
+    background-color: #5194ff;
+    color: white;
+    font-family: Georgia, serif;
+}
+
+.bid-button:hover {
+    background-color: #2d7eff;
+}
+
+.item-name {
+    margin-top: 5px;
+    font-family: Georgia, serif;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 350px 200px;
+    grid-gap: 50px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.info-photo {
+    height: 300px;
+    width: 400px;
+}
+
+.info-header {
+    margin-top: 0px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-family: Georgia, serif;
+}
+
+.info-description {
+    margin-top: 40px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: 20px;
+    font-family: Georgia, serif;
+}
+
+.about-container {
+    height: 400px;
+    line-height: 20px;
+    text-align: center;
+    width: 500px;
+    position: relative;
+    left: 30%;
+}
+
+.about-header {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    margin-top: 0px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    text-align: justify;
+}
